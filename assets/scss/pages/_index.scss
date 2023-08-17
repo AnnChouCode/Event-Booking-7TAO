@@ -1,99 +1,115 @@
-.header{
-  &-banner{
+// HEADER
+.header {
+  &-banner {
     height: 350px;
-    background-image: url(../images/event/13.jpg);    
+    background-image: url(../images/event/13.jpg);
     background-position: center;
     background-size: cover;
 
-    @include media-breakpoint-up(md) { 
+    @include media-breakpoint-up(md) {
       height: 518px;
-     }
+    }
   }
 
-  &-catalog{    
-      border: 2px solid $primary;
-      height: 112px;
+  &-catalog {
+    border: 2px solid $primary;
+    height: 112px;
 
-      :hover{
-        color:$tertiary;
-        filter: invert(54%) sepia(10%) saturate(2615%) hue-rotate(313deg) brightness(86%) contrast(85%);
+    &:hover {
+      h2 {
+        color: $tertiary;
       }
 
-      @include media-breakpoint-up(sm) { 
-        height: 196px;
-       }
-    
+      img {
+        filter: invert(54%) sepia(10%) saturate(2615%) hue-rotate(313deg) brightness(86%) contrast(85%);
+      }
+    }
 
-    img{
+
+    @include media-breakpoint-up(sm) {
+      height: 196px;
+    }
+
+    img {
       width: 40px;
       height: 40px;
 
-      @include media-breakpoint-up(md) { 
+      @include media-breakpoint-up(md) {
         width: 80px;
-      height: 80px;
-       }
+        height: 80px;
+      }
     }
   }
 
-  &-catalog-more{
-    :hover{
-      color:$tertiary;
-      filter: invert(54%) sepia(10%) saturate(2615%) hue-rotate(313deg) brightness(86%) contrast(85%);
+  &-catalog-more {
+    height: 112px;
+
+    &:hover p {
+      color: $tertiary !important;
+    }
+
+    @include media-breakpoint-up(sm) {
+      height: 196px;
     }
   }
 }
 
-.recent-img{
+// RECENT
+.recent-img {
   height: 210px;
-  object-fit:cover;
+  object-fit: cover;
 
-  @include media-breakpoint-up(md){
-    height: 255px;    
+  @include media-breakpoint-up(md) {
+    height: 255px;
   }
 }
 
-
-.online{
-  &-img{
-    background-image: url(../images/event/online.jpg);    
+// ONLINE
+.online {
+  &-img {
+    background-image: url(../images/event/online.jpg);
     background-position: center;
     background-size: cover;
     height: 158px;
 
-    @include media-breakpoint-up(md){
-      height: 100%;    
-    } 
+    @include media-breakpoint-up(md) {
+      height: 100%;
+    }
   }
 }
 
-.albums{   
-  &-card{
+// ALBUMS
+.albums {
+  &-card {
     position: relative;
   }
 
-  &-tag{
+  &-tag {
     position: absolute;
-    top:0;
-    left:50%;
-    z-index:1;
+    top: 0;
+    left: 50%;
+    z-index: 1;
     transform: translate(-50%, -50%)
   }
 
-  &-photo{        
+  &-photo {
     background-position: center;
     background-size: cover;
   }
 
-  &-img1{
+  &-img1 {
     background-image: url(../images/album/01.jpg);
   }
-  &-img2{
+
+  &-img2 {
     background-image: url(../images/album/02.jpg);
   }
-  &-img3{
+
+  &-img3 {
     background-image: url(../images/album/03.jpg);
   }
-  &-img4{
+
+  &-img4 {
     background-image: url(../images/album/04.jpg);
   }
 }

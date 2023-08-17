@@ -6,6 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7TAO｜Your Event Booking</title>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="../assets/images/logo.png">
+  <!-- OGP -->
+  <meta property="og:title" content="7TAO｜Your Event Booking" />
+  <meta property="og:description" content="想第一時間獲得新奇有趣的活動資訊？快來 7TAO 活動訂票網" />
+  <meta property="og:url" content="https://annchoucode.github.io/Event-Booking-7TAO/ " />
+  <meta property="og:image" content="https://raw.githubusercontent.com/AnnChouCode/Event-Booking-7TAO/main/assets/images/event/13.jpg" />
+  <meta property="og:site_name" content="7TAO｜Your Event Booking" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="7TAO｜Your Event Booking" />
+  <meta name="twitter:description" content="想第一時間獲得新奇有趣的活動資訊？快來 7TAO 活動訂票網" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/AnnChouCode/Event-Booking-7TAO/main/assets/images/event/13.jpg" />
+  <!-- IOS ICON -->
+  <link href="../assets/images/logo.png" rel="apple-touch-icon" />
   <!-- MARQUEE SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
@@ -17,13 +34,13 @@
     <header class="container position-relative">
       <!-- MENU COLLAPSE -->
       <div class="btn-menu-collapse position-absolute d-md-none collapse" id="collapseExample">
-          <ul class="d-flex flex-column gap-18 border-0 border-primary border-bottom border-2 py-24 px-12">
-            <li>
-              <a class="fs-18 ff-yeseva" href="#"><i class="me-4 icofont-ui-file"></i>REGISTER</a>
-            </li>
-            <li>
-              <a class="fs-18 ff-yeseva" href="#"><i class="me-4 icofont-ui-user"></i>LOGIN</a>
-            </li>
+        <ul class="list-unstyled d-flex flex-column gap-18 border-0 border-primary border-bottom border-2 py-24 px-12">
+          <li>
+            <a class="fs-18 ff-yeseva" href="#"><i class="me-4 icofont-ui-file"></i>REGISTER</a>
+          </li>
+          <li>
+            <a class="fs-18 ff-yeseva" href="#"><i class="me-4 icofont-ui-user"></i>LOGIN</a>
+          </li>
         </ul>
       </div>
       <!-- HEADER BANNER -->
@@ -36,7 +53,7 @@
         </div>
       </div>
       <!-- HEADER CATALOG -->
-      <ul class="row py-32 py-md-48 flex-md-wrap g-8 g-lg-24">
+      <ul class="list-unstyled row py-32 py-md-48 flex-md-wrap g-8 g-lg-24">
         <li class="col-md-2 col-4 ">
           <a href="#" class="header-catalog d-flex flex-column  gap-12 align-items-center justify-content-center ">
             <img src="../assets/images/cate01.svg" alt="catalog">
@@ -68,17 +85,19 @@
           </a>
         </li>
         <li class="col-md-2 col-4">
-          <a href="#" class="header-catalog header-catalog-more d-flex flex-column gap-12 align-items-center justify-content-center bg-primary">
+          <a href="#"
+            class="header-catalog-more d-flex flex-column gap-12 align-items-center justify-content-center bg-primary">
             <p class="fs-sm-24 fs-48 text-secondary ff-serif lh-sm">探索<br>更多</p>
           </a>
         </li>
       </ul>
     </header>
-    
+
     <!-- RECENT -->
     <div class="mb-sm-60 mb-32 container">
       <!-- TITLE -->
-      <div class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
+      <div
+        class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
         <h4 class="ff-yeseva">RECENT</h4>
         <h3 class="ff-serif ">近期活動</h3>
       </div>
@@ -190,7 +209,8 @@
     <!-- ONLINE -->
     <div class="mb-sm-60 mb-32 container">
       <!-- TITLE -->
-      <div class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
+      <div
+        class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
         <h4 class="ff-yeseva">ONLINE</h4>
         <h3 class="ff-serif ">線上活動</h3>
       </div>
@@ -252,63 +272,67 @@
       </div>
       <!-- MARQUEE -->
       <%- include('./layout/marquee'); -%>
-      <!-- FOLLOW & SUBSCRIBE -->
-      <div class="container py-sm-60 pt-32 pb-48">
+        <!-- FOLLOW & SUBSCRIBE -->
+        <div class="container py-sm-60 pt-32 pb-48">
           <div class="row flex-md-row flex-column gy-md-0 gy-24">
             <div class="col pe-md-0">
-              <p class="fs-sm-24 fs-32 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary border border-bottom-0">#FOLLOW US</p>
-                <div class="p-sm-32 py-16 px-12 border-2 border-primary border">
-                  <p class="mb-sm-32 mb-16">想第一時間獲得新奇有趣的活動資訊？<br>
-                    追蹤我們的社群吧！<br>
-                    也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
-                  <ul>
-                    <li class=" mb-16">
-                      <a class="btn-follow d-flex align-items-center"
-                        href="mailto:7tao.event@gmail.com?subject=報名詢問&body=哈囉你好我是">
-                        <button class="me-16 btn btn-primary p-8"><i class="icofont-ui-email fs-16"></i></button>
-                        <span>7tao.event@gmail.com</span>
-                      </a>
-                    </li>
-                    <li class=" mb-16">
-                      <a class="btn-follow d-flex align-items-center" href="tel:09123123123">
-                        <button class="me-16 btn btn-primary p-8"><i class="icofont-phone fs-16"></i></button>
-                        <span>09123123123</span>
-                      </a>
-                    </li>
-                    <li class="">
-                      <a class="btn-follow d-flex align-items-center" href="#">
-                        <button class="me-16 btn btn-primary p-8 mt-auto"><i
-                            class="icofont-facebook fs-16"></i></button>
-                        <span>7TAO七逃</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <p
+                class="fs-sm-24 fs-32 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary border border-bottom-0">
+                #FOLLOW US</p>
+              <div class="p-sm-32 py-16 px-12 border-2 border-primary border">
+                <p class="mb-sm-32 mb-16">想第一時間獲得新奇有趣的活動資訊？<br>
+                  追蹤我們的社群吧！<br>
+                  也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
+                <ul class="list-unstyled">
+                  <li class=" mb-16">
+                    <a class="btn-follow d-flex align-items-center"
+                      href="mailto:7tao.event@gmail.com?subject=報名詢問&body=哈囉你好我是">
+                      <button class="me-16 btn btn-primary p-8"><i class="icofont-ui-email fs-16"></i></button>
+                      <span>7tao.event@gmail.com</span>
+                    </a>
+                  </li>
+                  <li class=" mb-16">
+                    <a class="btn-follow d-flex align-items-center" href="tel:09123123123">
+                      <button class="me-16 btn btn-primary p-8"><i class="icofont-phone fs-16"></i></button>
+                      <span>09123123123</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a class="btn-follow d-flex align-items-center" href="#">
+                      <button class="me-16 btn btn-primary p-8 mt-auto"><i class="icofont-facebook fs-16"></i></button>
+                      <span>7TAO七逃</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="col ps-md-0 d-flex flex-column">
-              <p class="fs-sm-24 fs-32 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary custom-border-md-start">#SUBSCRIBE US</p>
-                <div class="p-sm-32 py-16 px-12 border-2 border-primary flex-grow-1 custom-border-md-start">
-                  <p class="mb-sm-32 mb-16">訂閱電子報送折價券！<br>
-                    定期精選文章資訊及最新優惠資訊，<br>
-                    還不通通給我訂閱起來？</p>
-                  <input class="w-100 py-16 px-24 bg-transparent border border-2 border-primary " type="email"
-                    id="subscribe-mail" name="subscribe-mail" placeholder="輸入Email" aria-label="輸入Email" required>
-                </div>
-                <button class="btn btn-primary mt-auto w-100">
-                  <span class="me-4">確認訂閱</span>
-                  <i class="icofont-rounded-double-right"></i>
-                </button>
+              <p
+                class="fs-sm-24 fs-32 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary custom-border-md-start">
+                #SUBSCRIBE US</p>
+              <div class="p-sm-32 py-16 px-12 border-2 border-primary flex-grow-1 custom-border-md-start">
+                <p class="mb-sm-32 mb-16">訂閱電子報送折價券！<br>
+                  定期精選文章資訊及最新優惠資訊，<br>
+                  還不通通給我訂閱起來？</p>
+                <input class="w-100 py-16 px-24 bg-transparent border border-2 border-primary " type="email"
+                  id="subscribe-mail" name="subscribe-mail" placeholder="輸入Email" aria-label="輸入Email" required>
+              </div>
+              <button class="btn btn-primary mt-auto w-100">
+                <span class="me-4">確認訂閱</span>
+                <i class="icofont-rounded-double-right"></i>
+              </button>
             </div>
           </div>
-      </div>
-      <!-- SLOGAN -->
-      <div class="py-sm-60 py-48 d-flex flex-column align-items-center  ff-serif fw-bold border-3 border-primary border-top border-bottom">
-        <p class="mb-16 fs-32 fs-sm-18 px-12">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-        <p class="fs-sm-14 fs-18">——我也不知道誰說的</p>
-      </div>
+        </div>
+        <!-- SLOGAN -->
+        <div
+          class="py-sm-60 py-48 d-flex flex-column align-items-center  ff-serif fw-bold border-3 border-primary border-top border-bottom">
+          <p class="mb-16 fs-32 fs-sm-18 px-12">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+          <p class="fs-sm-14 fs-18">——我也不知道誰說的</p>
+        </div>
 
-      <!-- FOOTER -->
-      <%- include('./layout/footer'); -%>
+        <!-- FOOTER -->
+        <%- include('./layout/footer'); -%>
 
           <!-- JS IMPORT -->
           <script type="module" src="../main.js"></script>

@@ -1,5 +1,3 @@
-@import "../scss/base/reset.css";
-
 // FONT FAMILY
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
 // ICON
@@ -10,10 +8,10 @@
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
 
-// CUSTOM CSS
+// CUSTOMER CSS
 @import "./base/base";
-@import "./base/fontStyle";
 
+@import "./components/fontStyle";
 @import "./components/btn-primary";
 @import "./components/btn-recent-catalog";
 @import "./components/btn-recent-buying";
