@@ -1,11 +1,15 @@
 .btn-menu{
+    &:hover a{
+        color:$secondary;
+    }
+
     &-collapse{
         top:100%;
         left:0;
         background-color: #F3F1E5;
         width: 100%;
 
-        a:hover{
+        &:hover{
             color:$hover-color;
           }
     }
