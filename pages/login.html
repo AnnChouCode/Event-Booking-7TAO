@@ -4,31 +4,38 @@
 <%- include('./layout/head'); -%>
 
   <body>
-    <!-- NAV -->
-    <%- include('./layout/nav'); -%>
-      <!-- LOGIN -->
-      <main class="py-md-60 py-24 container">
-        <img style="width: 32px;height: 32px;" class="mb-16 d-block mx-auto" src="../assets/images/sparkler.png" alt="sparkler">
-        <h2 class="page-title text-center">會員登入</h2>
-        <div class="row">
-          <form class="col-md-4 col-12 mx-auto" action="#" method="post">
-            <label class="mb-8" for="emailadd">帳號</label>
-            <input class="mb-16 w-100  bg-transparent py-8 px-16 fs-20" type="email" name="emailadd" id="emailadd" placeholder="請輸入帳號" required  aria-label="請輸入帳號">
-            <label class="mb-8" for="passwordadd">密碼</label>
-            <input class="mb-32 w-100  bg-transparent py-8 px-16 fs-20" type="password" name="passwordadd" id="passwordadd" placeholder="請輸入密碼" required  aria-label="請輸入密碼">
-            <button class="btn btn-primary w-100">
-              <span class="me-4">登入</span>
-                  <i class="icofont-rounded-double-right"></i>
-            </button>
-          </form>
-        </div>
-      </main>
+    <div class="d-flex flex-column vh-100">
+      <!-- NAV -->
+      <%- include('./layout/nav'); -%>
+        <!-- LOGIN -->
 
-      <!-- FOOTER -->
-      <%- include('./layout/footer'); -%>
+        <main class="py-md-60 py-24 container flex-grow-1">
+          <img style="width: 32px;height: 32px;" class="mb-16 d-block mx-auto" src="../assets/images/sparkler.png"
+            alt="sparkler">
+          <h2 class="page-title text-center">會員登入</h2>
+          <div class="row">
+            <form class="col-md-4 col-12 mx-auto" action="#" method="post">
+              <label class="mb-8" for="emailadd">帳號</label>
+              <input class="mb-16 w-100  bg-transparent py-8 px-16 fs-20" type="email" name="emailadd" id="emailadd"
+                placeholder="請輸入帳號" required aria-label="請輸入帳號">
+              <label class="mb-8" for="passwordadd">密碼</label>
+              <input class="mb-32 w-100  bg-transparent py-8 px-16 fs-20" type="password" name="passwordadd"
+                id="passwordadd" placeholder="請輸入密碼" required aria-label="請輸入密碼">
+              <button class="btn btn-primary w-100">
+                <span class="me-4">登入</span>
+                <i class="icofont-rounded-double-right"></i>
+              </button>
+            </form>
+          </div>
+        </main>
 
-        <!-- JS IMPORT -->
-        <script type="module" src="../main.js"></script>
+
+        <!-- FOOTER -->
+        <%- include('./layout/footer'); -%>
+    </div>
+
+    <!-- JS IMPORT -->
+    <script type="module" src="../main.js"></script>
 
   </body>
 
