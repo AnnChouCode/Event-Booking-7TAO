@@ -1,0 +1,8 @@
+.btn-follow:hover{
+    > i{
+        color:$secondary;
+    }
+    > span{
+        text-decoration: underline;
+    }
+}

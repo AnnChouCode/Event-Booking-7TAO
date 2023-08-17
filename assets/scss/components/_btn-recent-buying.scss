@@ -1,0 +1,14 @@
+.btn-recent-buying{
+    position:relative;
+
+    &:hover:before{
+        content: "";
+        position:absolute;
+        background-color: $secondary;
+        width: 29px;
+        height: 29px;
+        border-radius: 99px;
+        left:-10px;
+        z-index: -1;
+    }
+}

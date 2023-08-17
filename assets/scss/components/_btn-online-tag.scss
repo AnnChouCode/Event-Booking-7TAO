@@ -1,0 +1,29 @@
+.btn-online-tag{
+    padding:4px 24px;
+    position: relative;
+    font-size: 14px;
+
+    &:hover{
+        background-color: $primary;
+        color:$secondary;
+
+        &:before {
+            background-color: $secondary;
+        }
+    }
+
+    &:before{
+        content:"";
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        top:0;
+        left:0;
+        background-color: $primary;    
+    }
+
+    @include media-breakpoint-up(sm) { 
+        font-size: 16px;
+       }
+
+}

@@ -1,0 +1,45 @@
+.ff-yeseva{
+    font-family: $font-family-monospace;
+}
+
+.ff-serif{
+    font-family: $font-family-serif;
+}
+
+@include media-breakpoint-down(sm) {
+    h2 {
+      font-size: 16px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    h5{
+        font-size: 32px;
+    }
+
+    .fs-sm-32{
+        font-size: 32px !important;
+    }
+
+    .fs-sm-24{
+        font-size: 24px !important;
+    }
+
+    .fs-sm-18{
+        font-size: 18px !important;
+    }
+
+    .fs-sm-16{
+        font-size: 16px !important;
+    }
+
+    .fs-sm-14{
+        font-size: 14px !important;
+    }
+  }

@@ -1,0 +1,30 @@
+@import "../scss/base/reset.css";
+
+// FONT FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
+// ICON
+@import "../scss/components/icofont/icofont.min.css";
+
+// BOOTSTRAP
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import "../../node_modules/bootstrap";
+
+// CUSTOM CSS
+@import "./base/base";
+@import "./base/fontStyle";
+
+@import "./components/btn-primary";
+@import "./components/btn-recent-catalog";
+@import "./components/btn-recent-buying";
+@import "./components/btn-online-tag";
+@import "./components/btn-menu";
+@import "./components/btn-follow";
+@import "./components/input-search";
+@import "./components/marquee";
+@import "./components/utility";
+
+@import './layout/nav.scss';
+@import './pages/index.scss';
+
+

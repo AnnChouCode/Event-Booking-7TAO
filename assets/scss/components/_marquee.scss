@@ -1,0 +1,11 @@
+.swiper-wrapper {
+  transition-timing-function: linear;
+  /* 開始到結束速度一致 */
+}
+
+.swiper-slide {
+  letter-spacing: 3.2px;
+  width: auto;
+  background: #000;
+  white-space: nowrap;
+}

@@ -1,0 +1,21 @@
+.nav {
+  .logo a {
+    display: block;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @include media-breakpoint-up(sm) { 
+      width: 53px;
+    height: 53px;
+     }
+  }
+  
+  ul a:hover{
+      color:$hover-color;
+    }
+  }

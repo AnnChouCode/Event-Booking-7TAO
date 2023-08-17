@@ -1,0 +1,12 @@
+.btn-menu{
+    &-collapse{
+        top:-32px;
+        left:0;
+        background-color: #F3F1E5;
+        width: 100%;
+
+        a:hover{
+            color:$hover-color;
+          }
+    }
+}

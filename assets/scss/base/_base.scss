@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    // outline: 1px solid orange;
+}
+
+body {
+    font-family: $font-family-sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1320px;
+    margin:0 auto;
+}
