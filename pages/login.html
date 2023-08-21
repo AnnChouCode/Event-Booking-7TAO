@@ -7,28 +7,37 @@
     <div class="d-flex flex-column vh-100">
       <!-- NAV -->
       <%- include('./layout/nav'); -%>
+      
         <!-- LOGIN -->
-
         <main class="py-md-60 py-24 container flex-grow-1">
           <img style="width: 32px;height: 32px;" class="mb-16 d-block mx-auto" src="../assets/images/sparkler.png"
             alt="sparkler">
           <h2 class="page-title text-center">會員登入</h2>
-          <div class="row">
-            <form class="col-md-4 col-12 mx-auto" action="#" method="post">
-              <label class="mb-8" for="emailadd">帳號</label>
-              <input class="mb-16 w-100  bg-transparent py-8 px-16 fs-20" type="email" name="emailadd" id="emailadd"
-                placeholder="請輸入帳號" required aria-label="請輸入帳號">
-              <label class="mb-8" for="passwordadd">密碼</label>
-              <input class="mb-32 w-100  bg-transparent py-8 px-16 fs-20" type="password" name="passwordadd"
-                id="passwordadd" placeholder="請輸入密碼" required aria-label="請輸入密碼">
+          <form class="row justify-content-center needs-validation" action="#" method="post" novalidate>
+            <div class="col-md-4 col-12">
+              <div class="mb-16">
+                <label class="mb-8" for="email">帳號</label>
+                <input class="w-100  bg-transparent py-8 px-16 fs-20 form-control" type="email" name="email"
+                  id="emailadd" placeholder="請輸入帳號" required aria-label="請輸入帳號">
+                <div class="invalid-feedback">
+                  請輸入帳號
+                </div>
+              </div>
+              <div class="mb-md-32 mb-24">
+                <label class="mb-8" for="password">密碼</label>
+                <input class="w-100  bg-transparent py-8 px-16 fs-20 form-control" type="password" name="password"
+                  id="password" placeholder="請輸入密碼" required aria-label="請輸入密碼">
+                <div class="invalid-feedback">
+                  請輸入密碼
+                </div>
+              </div>
               <button class="btn btn-primary w-100">
                 <span class="me-4">登入</span>
                 <i class="icofont-rounded-double-right"></i>
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </main>
-
 
         <!-- FOOTER -->
         <%- include('./layout/footer'); -%>
@@ -36,6 +45,17 @@
 
     <!-- JS IMPORT -->
     <script type="module" src="../main.js"></script>
+    <!-- Validation jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script>
+      $('.needs-validation').each(function (index) {
+        $(this).on('submit', function (e) {
+          e.preventDefault();
+          $(this).addClass('was-validated');
+        });
+      });
+    </script>       
 
   </body>
 
