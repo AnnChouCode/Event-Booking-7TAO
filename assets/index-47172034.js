@@ -1,0 +1,1 @@
+import"./bootstrap.min-290f79b6.js";import e from"https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";new e(".bannerSwiper",{autoplay:!0,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});new e(".marqueeSwiper",{slidesPerView:"auto",speed:2e4,loop:!0,autoplay:{delay:1}});
