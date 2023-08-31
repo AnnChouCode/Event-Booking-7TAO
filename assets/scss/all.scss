@@ -1,7 +1,7 @@
 // FONT FAMILY
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
 // ICON
-@import "../scss/components/icofont/icofont.min.css";
+@import "../scss/vendor/icofont/icofont.min.css";
 
 // BOOTSTRAP
 @import "../../node_modules/bootstrap/scss/functions";
@@ -11,7 +11,13 @@
 // CUSTOMER CSS
 @import "./base/base";
 
-@import "./components/fontStyle";
+// CUSTOMER utility
+@import "./components/utility";
+// BOOTSTRAP utilities api，for font-size RWD（後載入）
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "./base/fontStyle";
+
 @import "./components/btn-primary";
 @import "./components/btn-recent-catalog";
 @import "./components/btn-recent-buying";
@@ -20,7 +26,6 @@
 @import "./components/btn-follow";
 @import "./components/input-search";
 @import "./components/marquee";
-@import "./components/utility";
 
 @import './layout/nav.scss';
 @import './pages/index.scss';

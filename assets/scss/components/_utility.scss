@@ -1,26 +1,5 @@
-ul{
-    margin-bottom: 0;
-    padding: 0;
-}
-
-.rotate-2{
-    transform: rotate(2deg);  
-}
-
-.rotate-m2{
-    transform: rotate(-2deg);
-}
-
-.rotate-m4{
-    transform: rotate(-4deg);
-}
-
-.custom-border-md-start{
-    border-top:2px solid $primary;
-    border-right:2px solid $primary;
-    border-left: 2px solid $primary;
-
-    @include media-breakpoint-up(md) { 
-        border-left: 0;
-       }
-}
+$utilities: map-merge($utilities,
+("font-size": map-merge(map-get($utilities, "font-size"),
+(responsive: true,
+)),
+));

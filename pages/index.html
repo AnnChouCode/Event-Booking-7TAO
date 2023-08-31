@@ -1,328 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./layout/head'); -%>
+<%- include('./layout/head'); -%>
 
-<body>
-  <!-- NAV -->
-  <%- include('./layout/nav'); -%>
-    <!-- HEADER -->
-    <header class="container">
-      <!-- MENU COLLAPSE -->
-      <div class="btn-menu-collapse position-absolute d-md-none collapse" id="collapseExample">
-        <ul class="list-unstyled d-flex flex-column gap-18 border-0 border-primary border-bottom border-2 py-24 px-12">
-          <li>
-            <a class="fs-18 ff-yeseva" href="#"><i class="me-4 icofont-ui-file"></i>REGISTER</a>
+  <body>
+    <!-- NAV -->
+    <%- include('./layout/nav'); -%>
+
+      <!-- HEADER -->
+      <header class="container">
+        <!-- MENU COLLAPSE -->
+        <div class="position-absolute d-md-none btn-menu-collapse collapse" id="collapseExample">
+          <ul
+            class="d-flex flex-column gap-18 py-24 px-12 list-unstyled border-0 border-primary border-bottom border-2">
+            <li>
+              <a class="fs-18 ff-yeseva" href="#"><i class="me-4 icofont-ui-file"></i>REGISTER</a>
+            </li>
+            <li>
+              <a class="fs-18 ff-yeseva" href="login.html"><i class="me-4 icofont-ui-user"></i>LOGIN</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- HEADER BANNER -->
+        <div class="swiper bannerSwiper header-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="position-absolute z-1 d-flex flex-column justify-content-between pt-md-48 pt-16 pb-24 px-md-48 px-40 w-100 h-100">
+                <p class="fs-md-60 fs-32 ff-yeseva text-white">19 MAY 2023</p>
+                <div class="text-white text-center">
+                  <h3 class="ff-serif mb-lg-16 mb-0 fs-md-24 fs-18">隔牆有耳-沒有草東的派對</h3>
+                  <p class="d-lg-block d-none">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>
+                    帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+                </div>
+              </div>
+              <img class="d-block w-100 h-100 object-fit-cover" src="../assets/images/event/13.jpg" alt="event">
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="position-absolute z-1 d-flex flex-column justify-content-between pt-md-48 pt-16 pb-24 px-md-48 px-40 w-100 h-100">
+                <p class="fs-md-60 fs-32 ff-yeseva text-white">19 MAY 2023</p>
+                <div class="text-white text-center">
+                  <h3 class="ff-serif mb-lg-16 mb-0 fs-md-24 fs-18">邪典電影派對——房間</h3>
+                  <p class="d-lg-block d-none">一種邪教、一種派對的形式<br>
+                    你有聽說過「大災難家」裡面的主角 Tommy Wiseau製作的「史上最爛的電影」——房間嗎？</p>
+                </div>
+              </div>
+              <img class="d-block w-100 h-100 object-fit-cover" src="../assets/images/event/01.jpg" alt="event">
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="position-absolute z-1 d-flex flex-column justify-content-between pt-md-48 pt-16 pb-24 px-md-48 px-40 w-100 h-100">
+                <p class="fs-md-60 fs-32 ff-yeseva text-white">23 MAY 2023</p>
+                <div class="text-white text-center">
+                  <h3 class="ff-serif mb-lg-16 mb-0 fs-md-24 fs-18">怪舞俱樂部</h3>
+                  <p class="d-lg-block d-none">覺得自己的舞蹈細胞異於常人？<br>
+                    來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的</p>
+                </div>
+              </div>
+              <img class="d-block w-100 h-100 object-fit-cover" src="../assets/images/event/02.jpg" alt="event">
+            </div>
+          </div>
+          <div class="swiper-button-next banner-swiper-hover"></div>
+          <div class="swiper-button-prev banner-swiper-hover"></div>
+        </div>
+
+
+        <!-- HEADER CATALOG -->
+        <ul class="row g-8 g-lg-24 py-32 py-md-48 list-unstyled">
+          <li class="col-md-2 col-4 ">
+            <a href="#" class="d-flex flex-column gap-12 align-items-center justify-content-center header-catalog">
+              <img src="../assets/images/cate01.svg" alt="catalog">
+              <h2 class="fs-sm-24 fs-16 ff-serif ">演出</h2>
+            </a>
           </li>
-          <li>
-            <a class="fs-18 ff-yeseva" href="login.html"><i class="me-4 icofont-ui-user"></i>LOGIN</a>
+          <li class="col-md-2 col-4">
+            <a href="#" class="d-flex flex-column gap-12 align-items-center justify-content-center header-catalog"><img
+                src="../assets/images/cate02.svg" alt="catalog">
+              <h2 class="fs-sm-24 fs-16 ff-serif ">聯誼</h2>
+            </a>
+          </li>
+          <li class="col-md-2 col-4">
+            <a href="#" class="d-flex flex-column gap-12 align-items-center justify-content-center header-catalog"><img
+                src="../assets/images/cate03.svg" alt="catalog">
+              <h2 class="fs-sm-24 fs-16 ff-serif ">展覽</h2>
+            </a>
+          </li>
+          <li class="col-md-2 col-4">
+            <a href="#" class="d-flex flex-column gap-12 align-items-center justify-content-center header-catalog"><img
+                src="../assets/images/cate04.svg" alt="catalog">
+              <h2 class="fs-sm-24 fs-16 ff-serif ">美食</h2>
+            </a>
+          </li>
+          <li class="col-md-2 col-4">
+            <a href="#" class="d-flex flex-column gap-12 align-items-center justify-content-center header-catalog"><img
+                src="../assets/images/cate05.svg" alt="catalog">
+              <h2 class="fs-sm-24 fs-16 ff-serif ">戶外</h2>
+            </a>
+          </li>
+          <li class="col-md-2 col-4">
+            <a href="#"
+              class="d-flex flex-column gap-12 align-items-center justify-content-center bg-primary header-catalog-more">
+              <p class="fs-sm-48 fs-24 text-secondary ff-serif lh-sm">探索<br>更多</p>
+            </a>
           </li>
         </ul>
-      </div>
-      <!-- HEADER BANNER -->
-      <div class="p-md-48 pb-md-24 p-16 pt-16 px-40 pb-24 header-banner d-flex flex-column  justify-content-between ">
-        <p class="fs-60 fs-sm-32 ff-yeseva text-white">19 MAY 2023</p>
-        <div class="text-white text-center">
-          <h3 class="ff-serif mb-16 fs-24 fs-sm-18">隔牆有耳-沒有草東的派對</h3>
-          <p class="d-md-block d-none">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>
-            帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
-        </div>
-      </div>
-      <!-- HEADER CATALOG -->
-      <ul class="list-unstyled row py-32 py-md-48 flex-md-wrap g-8 g-lg-24">
-        <li class="col-md-2 col-4 ">
-          <a href="#" class="header-catalog d-flex flex-column  gap-12 align-items-center justify-content-center ">
-            <img src="../assets/images/cate01.svg" alt="catalog">
-            <h2 class="ff-serif ">演出</h2>
-          </a>
-        </li>
-        <li class="col-md-2 col-4">
-          <a href="#" class="header-catalog d-flex flex-column  gap-12 align-items-center justify-content-center "><img
-              src="../assets/images/cate02.svg" alt="catalog">
-            <h2 class="ff-serif ">聯誼</h2>
-          </a>
-        </li>
-        <li class="col-md-2 col-4">
-          <a href="#" class="header-catalog d-flex flex-column  gap-12 align-items-center justify-content-center "><img
-              src="../assets/images/cate03.svg" alt="catalog">
-            <h2 class="ff-serif ">展覽</h2>
-          </a>
-        </li>
-        <li class="col-md-2 col-4">
-          <a href="#" class="header-catalog d-flex flex-column  gap-12 align-items-center justify-content-center "><img
-              src="../assets/images/cate04.svg" alt="catalog">
-            <h2 class="ff-serif ">美食</h2>
-          </a>
-        </li>
-        <li class="col-md-2 col-4">
-          <a href="#" class="header-catalog d-flex flex-column  gap-12 align-items-center justify-content-center "><img
-              src="../assets/images/cate05.svg" alt="catalog">
-            <h2 class="ff-serif ">戶外</h2>
-          </a>
-        </li>
-        <li class="col-md-2 col-4">
-          <a href="#"
-            class="header-catalog-more d-flex flex-column gap-12 align-items-center justify-content-center bg-primary">
-            <p class="fs-sm-24 fs-48 text-secondary ff-serif lh-sm">探索<br>更多</p>
-          </a>
-        </li>
-      </ul>
-    </header>
+      </header>
 
-    <!-- RECENT -->
-    <div class="mb-sm-60 mb-32 container">
-      <!-- TITLE -->
-      <div
-        class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
-        <h4 class="ff-yeseva">RECENT</h4>
-        <h3 class="ff-serif ">近期活動</h3>
-      </div>
-      <!-- INFO -->
-      <div class="row p-0 gy-lg-48 gy-24">
-        <div class="col-lg-4 col-sm-6 d-flex flex-column">
-          <h5 class="pb-12 border-primary  border-bottom border-3 mb-12 ff-yeseva">19 MAY 2023</h5>
-          <img class="mb-12 recent-img" src="../assets/images/event/01.jpg" alt="event">
-          <h3 class="mb-12 ff-serif fs-md-18 fs-24 fw-bold">邪典電影派對——房間</h3>
-          <p class="mb-16 flex-grow-1">你有聽說過「大災難家」裡面的主角 Tommy Wiseau
-            製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
-          <div class="py-12 d-flex justify-content-between  border-primary border-top border-bottom border-2">
-            <a href="#" class="d-flex gap-4 btn-recent-catalog">
-              <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
-              <span class="ff-serif">社群活動</span>
-            </a>
-            <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
-              <span class="fw-bold ">開賣中</span>
-              <i class="icofont-rounded-double-right"></i>
-            </a>
-          </div>
+      <!-- RECENT -->
+      <div class="mb-sm-60 mb-32 container">
+        <!-- TITLE -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
+          <h4 class="fs-sm-64 fs-24 ff-yeseva">RECENT</h4>
+          <h3 class="fs-sm-32 fs-16 ff-serif">近期活動</h3>
         </div>
-        <div class="col-lg-4 col-sm-6 d-flex flex-column">
-          <h5 class="pb-12 border-primary  border-bottom border-3 mb-12 ff-yeseva">23 MAY 2023</h5>
-          <img class="mb-12 recent-img" src="../assets/images/event/02.jpg" alt="event">
-          <h3 class="mb-12 ff-serif fs-md-18 fs-24 fw-bold">怪舞俱樂部</h3>
-          <p class="mb-16 flex-grow-1">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的....
-          </p>
-          <div class="py-12 d-flex justify-content-between  border-primary border-top border-bottom border-2">
-            <a href="#" class="d-flex gap-4 btn-recent-catalog">
-              <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
-              <span class="ff-serif">演出</span>
-            </a>
-            <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
-              <span class="fw-bold ">檢視活動</span>
-              <i class="icofont-rounded-double-right"></i>
-            </a>
+        <!-- INFO -->
+        <div class="row p-0 gy-lg-48 gy-24">
+          <div class="d-flex flex-column col-xl-4 col-sm-6">
+            <h5 class="pb-12 mb-12 border-primary border-bottom border-3 fs-md-48 fs-32 ff-yeseva">19 MAY 2023</h5>
+            <img class="mb-12 recent-img" src="../assets/images/event/01.jpg" alt="event">
+            <h3 class="mb-12 ff-serif fs-md-24 fs-18 fw-bold">邪典電影派對——房間</h3>
+            <p class="mb-16 flex-grow-1">你有聽說過「大災難家」裡面的主角 Tommy Wiseau
+              製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+            <div class="d-flex justify-content-between py-12 border-primary border-top border-bottom border-2">
+              <a href="#" class="d-flex gap-4 btn-recent-catalog">
+                <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
+                <span class="ff-serif">社群活動</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
+                <span class="fw-bold ">開賣中</span>
+                <i class="icofont-rounded-double-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 d-flex flex-column">
-          <h5 class="pb-12 border-primary  border-bottom border-3 mb-12 ff-yeseva">30 MAY 2023</h5>
-          <img class="mb-12 recent-img" src="../assets/images/event/03.jpg" alt="event">
-          <h3 class="mb-12 ff-serif fs-md-18 fs-24 fw-bold">哈利波特馬拉松</h3>
-          <p class="mb-16 flex-grow-1">每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
-          </p>
-          <div class="py-12 d-flex justify-content-between  border-primary border-top border-bottom border-2">
-            <a href="#" class="d-flex gap-4 btn-recent-catalog">
-              <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
-              <span class="ff-serif">聯誼</span>
-            </a>
-            <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
-              <span class="fw-bold ">開賣中</span>
-              <i class="icofont-rounded-double-right"></i>
-            </a>
+          <div class="d-flex flex-column col-xl-4 col-sm-6">
+            <h5 class="mb-12 pb-12 border-primary border-bottom border-3 fs-md-48 fs-32 ff-yeseva">23 MAY 2023</h5>
+            <img class="mb-12 recent-img" src="../assets/images/event/02.jpg" alt="event">
+            <h3 class="mb-12 ff-serif fs-md-24 fs-18 fw-bold">怪舞俱樂部</h3>
+            <p class="mb-16 flex-grow-1">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的....
+            </p>
+            <div class="d-flex justify-content-between py-12 border-primary border-top border-bottom border-2">
+              <a href="#" class="d-flex gap-4 btn-recent-catalog">
+                <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
+                <span class="ff-serif">演出</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
+                <span class="fw-bold ">檢視活動</span>
+                <i class="icofont-rounded-double-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 d-flex flex-column">
-          <h5 class="pb-12 border-primary  border-bottom border-3 mb-12 ff-yeseva">12 June 2023</h5>
-          <img class="mb-12 recent-img" src="../assets/images/event/04.jpg" alt="event">
-          <h3 class="mb-12 ff-serif fs-md-18 fs-24 fw-bold">皮卡丘排球大賽</h3>
-          <p class="mb-16 flex-grow-1">還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
-          </p>
-          <div class="py-12 d-flex justify-content-between  border-primary border-top border-bottom border-2">
-            <a href="#" class="d-flex gap-4 btn-recent-catalog">
-              <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
-              <span class="ff-serif">遊戲競賽</span>
-            </a>
-            <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
-              <span class="fw-bold ">開賣中</span>
-              <i class="icofont-rounded-double-right"></i>
-            </a>
+          <div class="d-flex flex-column col-xl-4 col-sm-6">
+            <h5 class="mb-12 pb-12 border-primary border-bottom border-3 fs-md-48 fs-32 ff-yeseva">30 MAY 2023</h5>
+            <img class="mb-12 recent-img" src="../assets/images/event/03.jpg" alt="event">
+            <h3 class="mb-12 ff-serif fs-md-24 fs-18 fw-bold">哈利波特馬拉松</h3>
+            <p class="mb-16 flex-grow-1">每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
+            </p>
+            <div class="d-flex justify-content-between py-12 border-primary border-top border-bottom border-2">
+              <a href="#" class="d-flex gap-4 btn-recent-catalog">
+                <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
+                <span class="ff-serif">聯誼</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
+                <span class="fw-bold ">開賣中</span>
+                <i class="icofont-rounded-double-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 d-flex flex-column">
-          <h5 class="pb-12 border-primary  border-bottom border-3 mb-12 ff-yeseva">25 June 2023</h5>
-          <img class="mb-12 recent-img" src="../assets/images/event/05.jpg" alt="event">
-          <h3 class="mb-12 ff-serif fs-md-18 fs-24 fw-bold">酒精路跑</h3>
-          <p class="mb-16 flex-grow-1">身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
-          </p>
-          <div class="py-12 d-flex justify-content-between  border-primary border-top border-bottom border-2">
-            <a href="#" class="d-flex gap-4 btn-recent-catalog">
-              <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
-              <span class="ff-serif">社群活動</span>
-            </a>
-            <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
-              <span class="fw-bold ">開賣中</span>
-              <i class="icofont-rounded-double-right"></i>
-            </a>
+          <div class="d-flex flex-column col-xl-4 col-sm-6">
+            <h5 class="mb-12 pb-12 border-primary border-bottom border-3 fs-md-48 fs-32 ff-yeseva">12 June 2023</h5>
+            <img class="mb-12 recent-img" src="../assets/images/event/04.jpg" alt="event">
+            <h3 class="mb-12 ff-serif fs-md-24 fs-18 fw-bold">皮卡丘排球大賽</h3>
+            <p class="mb-16 flex-grow-1">還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
+            </p>
+            <div class="d-flex justify-content-between py-12 border-primary border-top border-bottom border-2">
+              <a href="#" class="d-flex gap-4 btn-recent-catalog">
+                <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
+                <span class="ff-serif">遊戲競賽</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
+                <span class="fw-bold ">開賣中</span>
+                <i class="icofont-rounded-double-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 d-flex flex-column">
-          <h5 class="pb-12 border-primary  border-bottom border-3 mb-12 ff-yeseva">9 July 2023</h5>
-          <img class="mb-12 recent-img" src="../assets/images/event/06.jpg" alt="event">
-          <h3 class="mb-12 ff-serif fs-md-18 fs-24 fw-bold">展覽——我的房間</h3>
-          <p class="mb-16 flex-grow-1">每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。</p>
-          <div class="py-12 d-flex justify-content-between  border-primary border-top border-bottom border-2">
-            <a href="#" class="d-flex gap-4 btn-recent-catalog">
-              <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
-              <span class="ff-serif">展覽</span>
-            </a>
-            <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
-              <span class="fw-bold ">開賣中</span>
-              <i class="icofont-rounded-double-right"></i>
-            </a>
+          <div class="d-flex flex-column col-xl-4 col-sm-6">
+            <h5 class="mb-12 pb-12 border-primary border-bottom border-3 fs-md-48 fs-32 ff-yeseva">25 June 2023</h5>
+            <img class="mb-12 recent-img" src="../assets/images/event/05.jpg" alt="event">
+            <h3 class="mb-12 ff-serif fs-md-24 fs-18 fw-bold">酒精路跑</h3>
+            <p class="mb-16 flex-grow-1">身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
+            </p>
+            <div class="d-flex justify-content-between py-12 border-primary border-top border-bottom border-2">
+              <a href="#" class="d-flex gap-4 btn-recent-catalog">
+                <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
+                <span class="ff-serif">社群活動</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
+                <span class="fw-bold ">開賣中</span>
+                <i class="icofont-rounded-double-right"></i>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- ONLINE -->
-    <div class="mb-sm-60 mb-32 container">
-      <!-- TITLE -->
-      <div
-        class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
-        <h4 class="ff-yeseva">ONLINE</h4>
-        <h3 class="ff-serif ">線上活動</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="online-img mb-12 mb-md-0"></div>
-        </div>
-        <div class="col-md-5">
-          <h3 class="ff-serif mb-16 fs-32 fs-sm-18">切特居批踢</h3>
-          <div class="d-flex gap-8 mb-sm-32 mb-12">
-            <a href="#" class="btn-online-tag border border-primary border-1">競賽</a>
-            <a href="#" class="btn-online-tag border border-primary border-1">科技</a>
-            <a href="#" class="btn-online-tag border border-primary border-1">有趣</a>
+          <div class="d-flex flex-column col-xl-4 col-sm-6">
+            <h5 class="pb-12 border-primary border-bottom border-3 mb-12 fs-md-48 fs-32 ff-yeseva">9 July 2023</h5>
+            <img class="mb-12 recent-img" src="../assets/images/event/06.jpg" alt="event">
+            <h3 class="mb-12 ff-serif fs-md-24 fs-18 fw-bold">展覽——我的房間</h3>
+            <p class="mb-16 flex-grow-1">每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。</p>
+            <div class="d-flex justify-content-between py-12 border-primary border-top border-bottom border-2">
+              <a href="#" class="d-flex gap-4 btn-recent-catalog">
+                <img style="width: 24px; height: 24px;" src="../assets/images/sparkler.png" alt="sparkler">
+                <span class="ff-serif">展覽</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-4 btn-recent-buying">
+                <span class="fw-bold ">開賣中</span>
+                <i class="icofont-rounded-double-right"></i>
+              </a>
+            </div>
           </div>
-          <p class=" mb-sm-32 mb-12">最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
-            這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
-            該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
-          <button class="btn btn-primary w-100">
-            <span class="me-4">查看活動詳情</span>
-            <i class="icofont-rounded-double-right"></i>
-          </button>
         </div>
       </div>
-    </div>
-    <!-- MARQUEE -->
-    <%- include('./layout/marquee'); -%>
-      <!-- ALBUMS -->
-      <div class="ff-serif fw-bold py-sm-60 py-48 container">
-        <div class="row gy-40 ">
-          <a href="#" class="col-lg-3 col-sm-6 d-flex flex-column">
-            <div class="flex-grow-1 border border-2 border-primary p-16 albums-card">
-              <div class="py-8 px-16 albums-tag bg-white rotate-m4">社群活動</div>
-              <div class="ratio ratio-1x1 overflow-hidden mb-16 albums-photo albums-img1"></div>
-              <p class="fs-18">無聲派對-閉閉嘴dancing</p>
+
+      <!-- ONLINE -->
+      <div class="mb-sm-60 mb-32 container">
+        <!-- TITLE -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-sm-32 mb-24 py-16 px-12 py-sm-24 px-sm-32 border-primary border border-3 ">
+          <h4 class="fs-sm-64 fs-24 ff-yeseva">ONLINE</h4>
+          <h3 class="fs-sm-32 fs-16 ff-serif">線上活動</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-12 mb-md-0 online-img">
+            <!-- <div class="mb-12 mb-md-0 online-img"></div> -->
+            <img class="w-100 object-fit-cover online-img" src="../assets/images/event/online.jpg" alt="online-img">
+          </div>
+          <div class="col-md-5">
+            <h3 class="mb-16 fs-sm-32 fs-18 ff-serif">切特居批踢</h3>
+            <div class="d-flex gap-8 mb-sm-32 mb-12">
+              <a href="#" class="btn-online-tag border border-primary border-1">競賽</a>
+              <a href="#" class="btn-online-tag border border-primary border-1">科技</a>
+              <a href="#" class="btn-online-tag border border-primary border-1">有趣</a>
             </div>
-          </a>
-          <a href="#" class="col-lg-3 col-sm-6 d-flex flex-column">
-            <div class="flex-grow-1 border border-2 border-primary p-16 rotate-2 albums-card">
-              <div class="py-8 px-16 albums-tag bg-white rotate-m4">藝文活動</div>
-              <div class="ratio ratio-1x1 overflow-hidden mb-16 albums-photo albums-img2"></div>
-              <p class="fs-18">拯救老店大作戰
-            </div>
-          </a>
-          <a href="#" class="col-lg-3 col-sm-6 d-flex flex-column">
-            <div class="flex-grow-1 border border-2 border-primary p-16 rotate-m2 albums-card">
-              <div class="py-8 px-16 albums-tag bg-white rotate-m4">自我覺察</div>
-              <div class="ratio ratio-1x1 overflow-hidden mb-16 albums-photo albums-img3"></div>
-              <p class="fs-18">內觀修行-部落篇</p>
-            </div>
-          </a>
-          <a href="#" class="col-lg-3 col-sm-6 d-flex flex-column">
-            <div class="flex-grow-1 border border-2 border-primary p-16 rotate-2 albums-card">
-              <div class="py-8 px-16 albums-tag bg-white rotate-m4">聯誼活動</div>
-              <div class="ratio ratio-1x1 overflow-hidden mb-16 albums-photo albums-img4"></div>
-              <p class="fs-18">賞櫻野餐</p>
-            </div>
-          </a>
+            <p class="mb-sm-32 mb-12">最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
+              這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
+              該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
+            <button class="btn btn-primary w-100">
+              <span class="me-4">查看活動詳情</span>
+              <i class="icofont-rounded-double-right"></i>
+            </button>
+          </div>
         </div>
       </div>
       <!-- MARQUEE -->
       <%- include('./layout/marquee'); -%>
-        <!-- FOLLOW & SUBSCRIBE -->
-        <div class="container py-sm-60 pt-32 pb-48">
-          <div class="row flex-md-row flex-column gy-md-0 gy-24">
-            <div class="col pe-md-0">
-              <p
-                class="fs-sm-24 fs-32 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary border border-bottom-0">
-                #FOLLOW US</p>
-              <div class="p-sm-32 py-16 px-12 border-2 border-primary border">
-                <p class="mb-sm-32 mb-16">想第一時間獲得新奇有趣的活動資訊？<br>
-                  追蹤我們的社群吧！<br>
-                  也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
-                <ul class="list-unstyled">
-                  <li class=" mb-16">
-                    <a class="btn-follow d-flex align-items-center"
-                      href="mailto:7tao.event@gmail.com?subject=報名詢問&body=哈囉你好我是">
-                      <button class="me-16 btn btn-primary p-8"><i class="icofont-ui-email fs-16"></i></button>
-                      <span>7tao.event@gmail.com</span>
-                    </a>
-                  </li>
-                  <li class=" mb-16">
-                    <a class="btn-follow d-flex align-items-center" href="tel:09123123123">
-                      <button class="me-16 btn btn-primary p-8"><i class="icofont-phone fs-16"></i></button>
-                      <span>09123123123</span>
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="btn-follow d-flex align-items-center" href="#">
-                      <button class="me-16 btn btn-primary p-8 mt-auto"><i class="icofont-facebook fs-16"></i></button>
-                      <span>7TAO七逃</span>
-                    </a>
-                  </li>
-                </ul>
+        <!-- ALBUMS -->
+        <div class="py-sm-60 py-48 container ff-serif fw-bold">
+          <div class="row gy-40 ">
+            <a href="#" class="d-flex flex-column col-lg-3 col-sm-6">
+              <div class="position-relative p-16 flex-grow-1 border border-2 border-primary">
+                <div class="position-absolute translate-middle top-0 start-50 z-1 py-8 px-16 bg-white album-tag">社群活動
+                </div>
+                <div class="mb-16 overflow-hidden ratio ratio-1x1 albums-photo albums-img1"></div>
+                <span class="fs-18">無聲派對-閉閉嘴dancing</span>
               </div>
-            </div>
-            <div class="col ps-md-0 d-flex flex-column">
-              <p
-                class="fs-sm-24 fs-32 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary custom-border-md-start">
-                #SUBSCRIBE US</p>
-              <div class="p-sm-32 py-16 px-12 border-2 border-primary flex-grow-1 custom-border-md-start">
-                <p class="mb-sm-32 mb-16">訂閱電子報送折價券！<br>
-                  定期精選文章資訊及最新優惠資訊，<br>
-                  還不通通給我訂閱起來？</p>
-                <input class="w-100 py-16 px-24 bg-transparent border border-2 border-primary " type="email"
-                  id="subscribe-mail" name="subscribe-mail" placeholder="輸入Email" aria-label="輸入Email" required>
+            </a>
+            <a href="#" class="d-flex flex-column col-lg-3 col-sm-6">
+              <div class="position-relative p-16 flex-grow-1 border border-2 border-primary rotate-2">
+                <div class="position-absolute translate-middle top-0 start-50 z-1 py-8 px-16 bg-white album-tag">藝文活動
+                </div>
+                <div class="mb-16 overflow-hidden ratio ratio-1x1 albums-photo albums-img2"></div>
+                <span class="fs-18">拯救老店大作戰</span>
               </div>
-              <button class="btn btn-primary mt-auto w-100">
-                <span class="me-4">確認訂閱</span>
-                <i class="icofont-rounded-double-right"></i>
-              </button>
-            </div>
+            </a>
+            <a href="#" class="d-flex flex-column col-lg-3 col-sm-6">
+              <div class="position-relative p-16 flex-grow-1 border border-2 border-primary rotate-m2">
+                <div class="position-absolute translate-middle top-0 start-50 z-1 py-8 px-16 bg-white album-tag">自我覺察
+                </div>
+                <div class="mb-16 overflow-hidden ratio ratio-1x1 albums-photo albums-img3"></div>
+                <span class="fs-18">內觀修行-部落篇</span>
+              </div>
+            </a>
+            <a href="#" class="d-flex flex-column col-lg-3 col-sm-6">
+              <div class="position-relative p-16 flex-grow-1 border border-2 border-primary rotate-2">
+                <div class="position-absolute translate-middle top-0 start-50 z-1 py-8 px-16 bg-white album-tag">聯誼活動
+                </div>
+                <div class="mb-16 overflow-hidden ratio ratio-1x1 albums-photo albums-img4"></div>
+                <span class="fs-18">賞櫻野餐</span>
+              </div>
+            </a>
           </div>
         </div>
-        <!-- SLOGAN -->
-        <div
-          class="py-sm-60 py-48 d-flex flex-column align-items-center  ff-serif fw-bold border-3 border-primary border-top">
-          <p class="mb-16 fs-32 fs-sm-18 px-12">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-          <p class="fs-sm-14 fs-18">——我也不知道誰說的</p>
-        </div>
+        <!-- MARQUEE -->
+        <%- include('./layout/marquee'); -%>
+          <!-- FOLLOW & SUBSCRIBE -->
+          <div class="container py-sm-60 pt-32 pb-48">
+            <div class="row flex-md-row flex-column gy-md-0 gy-24">
+              <div class="col pe-md-0">
+                <p
+                  class="fs-sm-32 fs-24 py-16 px-sm-32 px-12 ff-serif fw-bold border-2 border-primary border border-bottom-0">
+                  #FOLLOW US</p>
+                <div class="p-sm-32 py-16 px-12 border-2 border-primary border">
+                  <p class="mb-sm-32 mb-16">想第一時間獲得新奇有趣的活動資訊？<br>
+                    追蹤我們的社群吧！<br>
+                    也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
+                  <ul class="list-unstyled">
+                    <li class="mb-16">
+                      <a class="d-flex align-items-center btn-follow-hover"
+                        href="mailto:7tao.event@gmail.com?subject=報名詢問&body=哈囉你好我是">
+                        <span class="me-16 p-8 btn btn-primary"><i class="icofont-ui-email fs-16"></i></span>
+                        <span>7tao.event@gmail.com</span>
+                      </a>
+                    </li>
+                    <li class="mb-16">
+                      <a class="d-flex align-items-center btn-follow-hover" href="tel:09123123123">
+                        <span class="me-16 p-8 btn btn-primary"><i class="icofont-phone fs-16"></i></span>
+                        <span>09123123123</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex align-items-center btn-follow-hover" href="#">
+                        <span class="me-16 p-8 mt-auto btn btn-primary"><i class="icofont-facebook fs-16"></i></span>
+                        <span>7TAO七逃</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex flex-column col ps-md-0">
+                <p
+                  class="py-16 px-sm-32 px-12 fs-sm-32 fs-24 ff-serif fw-bold border-2 border-primary custom-border-md-start">
+                  #SUBSCRIBE US</p>
+                <div class="p-sm-32 py-16 px-12 flex-grow-1 border-2 border-primary custom-border-md-start">
+                  <p class="mb-sm-32 mb-16">訂閱電子報送折價券！<br>
+                    定期精選文章資訊及最新優惠資訊，<br>
+                    還不通通給我訂閱起來？</p>
+                  <input class="py-16 px-24 w-100 bg-transparent border border-2 border-primary " type="email"
+                    id="subscribe-mail" name="subscribe-mail" placeholder="輸入Email" aria-label="輸入Email" required>
+                </div>
+                <button class="mt-auto w-100 btn btn-primary">
+                  <span class="me-4">確認訂閱</span>
+                  <i class="icofont-rounded-double-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SLOGAN -->
+          <div
+            class="d-flex flex-column align-items-center py-sm-60 py-48 ff-serif fw-bold border-3 border-primary border-top">
+            <p class="mb-16 fs-md-32 fs-18 px-12">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+            <p class="fs-sm-18 fs-14">——我也不知道誰說的</p>
+          </div>
 
-        <!-- FOOTER -->
-        <%- include('./layout/footer'); -%>
+          <!-- FOOTER -->
+          <%- include('./layout/footer'); -%>
 
-          <!-- JS IMPORT -->
-          <script type="module" src="../main.js"></script>
-          <!-- marquee swiper -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-          <script>
-            const swiper = new Swiper(".mySwiper", {
-              slidesPerView: "auto",
-              speed: 20000,
-              loop: true,
-              autoplay: {
-                delay: 1
-              }
-            });
-          </script>
-</body>
+            <!-- JS IMPORT -->
+            <script type="module" src="../main.js"></script>
+            <!-- Swiper JS -->
+            <script type="module">
+              import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+              const bannerSwiper = new Swiper(".bannerSwiper", {
+                autoplay:true,
+                loop: true,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+
+              const marqueeSwiper = new Swiper(".marqueeSwiper", {
+                slidesPerView: "auto",
+                speed: 20000,
+                loop: true,
+                autoplay: {
+                  delay: 1
+                }
+              });
+            </script>
+  </body>
 
 </html>

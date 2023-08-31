@@ -9,13 +9,13 @@
     white-space: nowrap;
     overflow: hidden;
 
-    @include media-breakpoint-up(sm) { 
+    @include media-breakpoint-up(sm) {
       width: 53px;
-    height: 53px;
-     }
-  }
-  
-  ul a:hover{
-      color:$hover-color;
+      height: 53px;
     }
   }
+
+  ul a:hover {
+    color: $hover-color;
+  }
+}

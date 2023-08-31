@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-    // outline: 1px solid orange;
-}
-
 body {
     font-family: $font-family-sans-serif;
 }
@@ -16,4 +10,9 @@ img {
 .container{
     max-width: 1320px;
     margin:0 auto;
+}
+
+ul{
+    margin-bottom: 0;
+    padding: 0;
 }

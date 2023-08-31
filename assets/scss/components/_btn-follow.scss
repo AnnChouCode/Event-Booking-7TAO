@@ -1,8 +1,8 @@
-.btn-follow:hover{
+.btn-follow-hover:hover{
     i{
         color:$secondary;
     }
-    span{
+    span:nth-child(0n+2){
         text-decoration: underline;
     }
 }
