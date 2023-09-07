@@ -12,7 +12,8 @@ https://annchoucode.github.io/Event-Booking-7TAO/
 設計稿來自於六角學院，此為課程作品
 
 ## 畫面
-![demo]([https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glasses-1.jpg](https://github.com/AnnChouCode/image-stock/blob/main/Event-Booking-7TAO/Event-Booking-7TAO.jpg))
+![demo](https://github.com/AnnChouCode/image-stock/blob/main/Event-Booking-7TAO/Event-Booking-7TAO.jpg)
+![demo](https://github.com/AnnChouCode/image-stock/blob/main/Event-Booking-7TAO/Event-Booking-7TAO-2.jpg)
 
 ## 專案技術
 - 使用 Bootstrap 5、客製化部分樣式
